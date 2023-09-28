@@ -1,24 +1,11 @@
 const url = 'https://jsonplaceholder.typicode.com/posts';
 
 async function getPosts() {
-    const posts = await fetch(url)
-        .then(response => {
-            return response.json();
-        })
-        .then((data) => {
-            return
-        })
+    return (await fetch(url)).json();
 }
 
-getPosts();
-
-// const postsRes = await fetch(url)
-//         .then(response => {
-//             return response.json();
-//         })
-//         .then((data) => data)
-//
-//
-// const postsContainer = document.getElementById('posts-container');
-// console.log(posts);
-// console.log(postsRes);
+getPosts().then(data => {
+    data.forEach((el) => {
+        //console.log(el);
+    })
+})

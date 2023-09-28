@@ -1,5 +1,69 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Mooli', sans-serif;
 }
 
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(217,20,232);
+    background: linear-gradient(130deg, rgba(217,20,232,1) 21%, rgba(0,212,255,1) 100%);
+}
+
+.header {
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+    background: white;
+    border-radius: 0 0 40px 40px;
+}
+
+.posts {
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    padding: 2vw;
+    border-radius: 40px;
+    background: mediumpurple;
+}
+
+.scroll-container {
+    height: 100%;
+    overflow: auto;
+}
+
+.post {
+    background: white;
+    border-radius: 40px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    background: mediumpurple;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    max-height: 30px;
+    overflow: hidden;
+}
+
+.id {
+    font-size: 20px;
+}
+
+.title {
+    padding-left: 10px;
+}
+
+.text {
+    height: 150px;
+    overflow: auto;
+}
+
+.user-id {
+    text-align: right;
+}
