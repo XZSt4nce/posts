@@ -12,8 +12,8 @@ getPosts().then(data => {
         const titleValue = element['title'];
         const bodyValue = element['body'];
 
-        const post = document.createElement('div')
-        post.classList.add('post')
+        const post = document.createElement('div');
+        post.classList.add('post');
 
         const postHeader = document.createElement('div');
         postHeader.classList.add('post-header');
@@ -27,7 +27,7 @@ getPosts().then(data => {
         titleParagraph.textContent = titleValue;
 
         postHeader.appendChild(idDiv);
-        postHeader.appendChild(titleParagraph)
+        postHeader.appendChild(titleParagraph);
 
         const textDiv = document.createElement('div');
         textDiv.classList.add('text');
