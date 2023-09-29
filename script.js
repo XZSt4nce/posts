@@ -44,3 +44,7 @@ getPosts().then(data => {
         scrollContainer.appendChild(post);
     })
 })
+
+scrollContainer.addEventListener('scroll', function(event) {
+    const scrollPercent = event.target.scrollTop / event.target.scrollHeight * 100;
+    document.getElementById('wrapper').style.background = `radial-gradient(at ${scrollPercent}% ${scrollPercent}%, rgba(1, 175, 250, 1) 20%, rgba(255, 0, 256, 1))`;});
